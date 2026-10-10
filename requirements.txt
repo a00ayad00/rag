@@ -1,0 +1,44 @@
+# Core Framework & API
+fastapi>=0.110.0
+uvicorn[standard]>=0.28.0
+pydantic>=2.6.0
+pydantic-settings>=2.2.0
+
+# LangChain & LangGraph Orchestration
+langchain>=0.2.0
+langchain-core>=0.2.0
+langchain-community>=0.2.0
+langgraph>=0.1.0
+
+# Vector Database & Retrieval
+qdrant-client>=1.8.0
+sentence-transformers>=2.6.0
+torch>=2.2.0
+transformers>=4.38.0
+flashrank>=0.2.0
+
+# Document Processing (PDFs & Arabic Text)
+pypdf>=4.1.0
+pymupdf>=1.23.0
+pdfplumber>=0.10.3
+arabic-reshaper>=3.0.0
+python-bidi>=0.4.2
+
+# LLM Providers (Free / Open Source options)
+groq>=0.5.0
+google-genai>=1.0.0
+langchain-groq>=0.1.0
+langchain-google-genai>=1.0.0
+
+# Evaluation & Metrics
+ragas>=0.1.7
+evaluate>=0.4.1
+rouge-score>=0.1.2
+scikit-learn>=1.4.0
+
+# Testing & Utilities
+pytest>=8.1.0
+httpx>=0.27.0
+pytest-asyncio>=0.23.0
+python-dotenv>=1.0.1
+tqdm>=4.66.0

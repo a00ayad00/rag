@@ -1,0 +1,362 @@
+[
+  {
+    "id": "EN-ANS-01",
+    "question": "What was the total enterprise AI investment in 2024 and by what percentage did it increase year-over-year?",
+    "language": "english",
+    "is_answerable": true,
+    "expected_sources": [{"filename": "EN_Report_01_AI_Strategy_2024.pdf", "page": 1}],
+    "ground_truth_answer": "Total enterprise AI investment reached $45 million in 2024, representing a 35% increase year-over-year [EN_Report_01_AI_Strategy_2024.pdf, Page 1].",
+    "key_entities": ["$45 million", "35%", "year-over-year"]
+  },
+  {
+    "id": "EN-ANS-02",
+    "question": "How much was loan processing time reduced by the automated underwriting copilots?",
+    "language": "english",
+    "is_answerable": true,
+    "expected_sources": [{"filename": "EN_Report_01_AI_Strategy_2024.pdf", "page": 2}],
+    "ground_truth_answer": "Loan processing time was reduced from 4 days to 4 hours [EN_Report_01_AI_Strategy_2024.pdf, Page 2].",
+    "key_entities": ["4 days to 4 hours", "loan processing"]
+  },
+  {
+    "id": "EN-ANS-03",
+    "question": "What was the Q3 net revenue and adjusted EBITDA reported by the enterprise?",
+    "language": "english",
+    "is_answerable": true,
+    "expected_sources": [{"filename": "EN_Report_02_Financial_Performance_Q3.pdf", "page": 1}],
+    "ground_truth_answer": "Net revenue reached $312.4 million (14.2% YoY growth) and Adjusted EBITDA was $78.1 million with a 25.0% operating margin [EN_Report_02_Financial_Performance_Q3.pdf, Page 1].",
+    "key_entities": ["$312.4 million", "$78.1 million", "25.0%"]
+  },
+  {
+    "id": "EN-ANS-04",
+    "question": "What is the revised full-year revenue guidance for the company?",
+    "language": "english",
+    "is_answerable": true,
+    "expected_sources": [{"filename": "EN_Report_02_Financial_Performance_Q3.pdf", "page": 3}],
+    "ground_truth_answer": "Full-year revenue guidance was revised upward to between $1.22 billion and $1.25 billion [EN_Report_02_Financial_Performance_Q3.pdf, Page 3].",
+    "key_entities": ["$1.22 billion and $1.25 billion", "revised upward"]
+  },
+  {
+    "id": "EN-ANS-05",
+    "question": "What is the levelized cost of energy (LCOE) achieved for utility-scale solar power?",
+    "language": "english",
+    "is_answerable": true,
+    "expected_sources": [{"filename": "EN_Report_03_Renewable_Energy_Outlook.pdf", "page": 1}],
+    "ground_truth_answer": "Levelized Cost of Energy (LCOE) for utility-scale solar dropped to $0.032 per kWh [EN_Report_03_Renewable_Energy_Outlook.pdf, Page 1].",
+    "key_entities": ["$0.032 per kWh", "LCOE", "solar"]
+  },
+  {
+    "id": "EN-ANS-06",
+    "question": "What is the battery energy storage capacity and annual degradation rate?",
+    "language": "english",
+    "is_answerable": true,
+    "expected_sources": [{"filename": "EN_Report_03_Renewable_Energy_Outlook.pdf", "page": 2}],
+    "ground_truth_answer": "Battery storage capacity expanded to 1,200 MWh with battery degradation remaining below 1.5% annually [EN_Report_03_Renewable_Energy_Outlook.pdf, Page 2].",
+    "key_entities": ["1,200 MWh", "1.5% annually"]
+  },
+  {
+    "id": "EN-ANS-07",
+    "question": "How many intrusion attempts were intercepted by the SOC, and what percentage was phishing?",
+    "language": "english",
+    "is_answerable": true,
+    "expected_sources": [{"filename": "EN_Report_04_Cybersecurity_Framework.pdf", "page": 1}],
+    "ground_truth_answer": "The SOC intercepted over 4.2 million malicious intrusion attempts, with phishing accounting for 58% of initial vector attacks [EN_Report_04_Cybersecurity_Framework.pdf, Page 1].",
+    "key_entities": ["4.2 million", "58% phishing"]
+  },
+  {
+    "id": "EN-ANS-08",
+    "question": "What are the Mean Time to Detect (MTTD) and Mean Time to Respond (MTTR) metrics?",
+    "language": "english",
+    "is_answerable": true,
+    "expected_sources": [{"filename": "EN_Report_04_Cybersecurity_Framework.pdf", "page": 3}],
+    "ground_truth_answer": "Mean Time to Detect (MTTD) decreased to 11 minutes, and Mean Time to Respond (MTTR) reached 28 minutes [EN_Report_04_Cybersecurity_Framework.pdf, Page 3].",
+    "key_entities": ["11 minutes", "28 minutes", "MTTD", "MTTR"]
+  },
+  {
+    "id": "EN-ANS-09",
+    "question": "What percentage of critical component manufacturing was shifted through nearshoring?",
+    "language": "english",
+    "is_answerable": true,
+    "expected_sources": [{"filename": "EN_Report_05_Supply_Chain_Resilience.pdf", "page": 1}],
+    "ground_truth_answer": "Nearshoring shifted 30% of critical component manufacturing from East Asia to North America and Europe [EN_Report_05_Supply_Chain_Resilience.pdf, Page 1].",
+    "key_entities": ["30%", "nearshoring", "North America and Europe"]
+  },
+  {
+    "id": "EN-ANS-10",
+    "question": "How much was excess safety stock reduced by ML demand forecasting?",
+    "language": "english",
+    "is_answerable": true,
+    "expected_sources": [{"filename": "EN_Report_05_Supply_Chain_Resilience.pdf", "page": 2}],
+    "ground_truth_answer": "Machine learning demand forecasting reduced excess safety stock by $32 million and lowered stockout incidents by 45% [EN_Report_05_Supply_Chain_Resilience.pdf, Page 2].",
+    "key_entities": ["$32 million", "45%", "safety stock"]
+  },
+  {
+    "id": "EN-ANS-11",
+    "question": "What diagnostic sensitivity was achieved by the FDA-cleared radiology computer vision models?",
+    "language": "english",
+    "is_answerable": true,
+    "expected_sources": [{"filename": "EN_Report_06_Healthcare_Technology.pdf", "page": 1}],
+    "ground_truth_answer": "The computer vision models achieved 94.8% sensitivity in detecting early-stage pulmonary nodules across 12 hospitals [EN_Report_06_Healthcare_Technology.pdf, Page 1].",
+    "key_entities": ["94.8% sensitivity", "pulmonary nodules", "12 hospitals"]
+  },
+  {
+    "id": "EN-ANS-12",
+    "question": "What encryption standard is used to protect patient health information (PHI)?",
+    "language": "english",
+    "is_answerable": true,
+    "expected_sources": [{"filename": "EN_Report_06_Healthcare_Technology.pdf", "page": 3}],
+    "ground_truth_answer": "Patient health information (PHI) is encrypted with AES-256 both in transit and at rest [EN_Report_06_Healthcare_Technology.pdf, Page 3].",
+    "key_entities": ["AES-256", "in transit and at rest", "HIPAA"]
+  },
+  {
+    "id": "EN-ANS-13",
+    "question": "What annual savings were realized by decommissioning on-premise data centers?",
+    "language": "english",
+    "is_answerable": true,
+    "expected_sources": [{"filename": "EN_Report_07_Cloud_Migration_Guide.pdf", "page": 1}],
+    "ground_truth_answer": "Decommissioning legacy on-premise data centers saved $14.5 million in annual facilities and cooling costs [EN_Report_07_Cloud_Migration_Guide.pdf, Page 1].",
+    "key_entities": ["$14.5 million", "facilities and cooling costs"]
+  },
+  {
+    "id": "EN-ANS-14",
+    "question": "What percentage of product packaging eliminated single-use plastic?",
+    "language": "english",
+    "is_answerable": true,
+    "expected_sources": [{"filename": "EN_Report_08_ESG_Sustainability_Charter.pdf", "page": 1}],
+    "ground_truth_answer": "Single-use plastic was eliminated across 92% of product packaging [EN_Report_08_ESG_Sustainability_Charter.pdf, Page 1].",
+    "key_entities": ["92%", "single-use plastic"]
+  },
+  {
+    "id": "EN-ANS-15",
+    "question": "What is the structured hybrid work policy schedule adopted by the company?",
+    "language": "english",
+    "is_answerable": true,
+    "expected_sources": [{"filename": "EN_Report_09_Human_Capital_Trends.pdf", "page": 1}],
+    "ground_truth_answer": "A structured hybrid work policy of 3 days on-site and 2 days remote was formalized [EN_Report_09_Human_Capital_Trends.pdf, Page 1].",
+    "key_entities": ["3 days on-site, 2 days remote", "hybrid work"]
+  },
+  {
+    "id": "EN-ANS-16",
+    "question": "What was the average turnaround time in business days to fulfill data subject access requests (DSAR)?",
+    "language": "english",
+    "is_answerable": true,
+    "expected_sources": [{"filename": "EN_Report_10_Data_Privacy_Compliance.pdf", "page": 1}],
+    "ground_truth_answer": "Data subject access requests (DSAR) were fulfilled within an average of 6.2 business days [EN_Report_10_Data_Privacy_Compliance.pdf, Page 1].",
+    "key_entities": ["6.2 business days", "DSAR", "GDPR"]
+  },
+  {
+    "id": "AR-ANS-01",
+    "question": "ما هي نسبة الخدمات الحكومية والداخلية التي تم تحويلها إلى منصات رقمية وكم بلغ الاستثمار في البنية التحتية السحابية؟",
+    "language": "arabic",
+    "is_answerable": true,
+    "expected_sources": [{"filename": "AR_Report_01_Digital_Transformation.pdf", "page": 1}],
+    "ground_truth_answer": "تم تحويل 85% من الخدمات إلى منصات رقمية متكاملة، وبلغ حجم الاستثمار في البنية التحتية السحابية 150 مليون ريال [AR_Report_01_Digital_Transformation.pdf, Page 1].",
+    "key_entities": ["85%", "150 مليون ريال", "البنية التحتية السحابية"]
+  },
+  {
+    "id": "AR-ANS-02",
+    "question": "ما هي معايير التوافر العالي ونسبة انخفاض الانقطاعات التشغيلية في المنصات السحابية؟",
+    "language": "arabic",
+    "is_answerable": true,
+    "expected_sources": [{"filename": "AR_Report_01_Digital_Transformation.pdf", "page": 2}],
+    "ground_truth_answer": "انخفضت الانقطاعات التشغيلية بنسبة 75% مع تطبيق معايير التوافر العالي 99.95% [AR_Report_01_Digital_Transformation.pdf, Page 2].",
+    "key_entities": ["75%", "99.95%", "التوافر العالي"]
+  },
+  {
+    "id": "AR-ANS-03",
+    "question": "كم بلغت نسبة نمو الناتج المحلي الإجمالي غير النفطي وما هي مساهمة القطاع الخاص؟",
+    "language": "arabic",
+    "is_answerable": true,
+    "expected_sources": [{"filename": "AR_Report_02_Economic_Growth_Vision.pdf", "page": 1}],
+    "ground_truth_answer": "سجل الناتج المحلي الإجمالي غير النفطي نمواً بنسبة 4.8%، وتجاوزت مساهمة القطاع الخاص 42% من إجمالي الناتج المحلي [AR_Report_02_Economic_Growth_Vision.pdf, Page 1].",
+    "key_entities": ["4.8%", "42%", "الناتج المحلي غير النفطي"]
+  },
+  {
+    "id": "AR-ANS-04",
+    "question": "كم بلغت قيمة تدفقات الاستثمار الأجنبي المباشر ونسبة نموها؟",
+    "language": "arabic",
+    "is_answerable": true,
+    "expected_sources": [{"filename": "AR_Report_02_Economic_Growth_Vision.pdf", "page": 2}],
+    "ground_truth_answer": "ارتفعت تدفقات الاستثمار الأجنبي المباشر بنسبة 28% لتصل إلى 19 مليار دولار [AR_Report_02_Economic_Growth_Vision.pdf, Page 2].",
+    "key_entities": ["28%", "19 مليار دولار", "الاستثمار الأجنبي المباشر"]
+  },
+  {
+    "id": "AR-ANS-05",
+    "question": "ما هي القدرة الإجمالية لمحطات الطاقة الشمسية المدشنة ومقدار خفض الانبعاثات الكربونية؟",
+    "language": "arabic",
+    "is_answerable": true,
+    "expected_sources": [{"filename": "AR_Report_03_Clean_Energy_Transition.pdf", "page": 1}],
+    "ground_truth_answer": "بلغت القدرة الإجمالية 2.5 غيغاوات، مما أسهم في خفض الانبعاثات الكربونية بمقدار 3.2 مليون طن سنوياً [AR_Report_03_Clean_Energy_Transition.pdf, Page 1].",
+    "key_entities": ["2.5 غيغاوات", "3.2 مليون طن", "الانبعاثات الكربونية"]
+  },
+  {
+    "id": "AR-ANS-06",
+    "question": "ما هي الطاقة الإنتاجية المستهدفة لمصنع الهيدروجين الأخضر بحلول عام 2026؟",
+    "language": "arabic",
+    "is_answerable": true,
+    "expected_sources": [{"filename": "AR_Report_03_Clean_Energy_Transition.pdf", "page": 2}],
+    "ground_truth_answer": "تبلغ الطاقة الإنتاجية لمصنع الهيدروجين الأخضر 600 طن يومياً بحلول عام 2026 [AR_Report_03_Clean_Energy_Transition.pdf, Page 2].",
+    "key_entities": ["600 طن يومياً", "2026", "الهيدروجين الأخضر"]
+  },
+  {
+    "id": "AR-ANS-07",
+    "question": "كم عدد محاولات الهجوم السيبراني التي تصدت لها المراكز في الربع الثالث وما نسبة التصيد الإلكتروني؟",
+    "language": "arabic",
+    "is_answerable": true,
+    "expected_sources": [{"filename": "AR_Report_04_Cybersecurity_Policy.pdf", "page": 1}],
+    "ground_truth_answer": "تصدت المراكز لأكثر من 5 ملايين محاولة هجوم سيبراني، وشكلت هجمات التصيد الإلكتروني 52% منها [AR_Report_04_Cybersecurity_Policy.pdf, Page 1].",
+    "key_entities": ["5 ملايين", "52%", "التصيد الإلكتروني"]
+  },
+  {
+    "id": "AR-ANS-08",
+    "question": "ما هي نسبة تطبيق ضوابط الأمن السيبراني الأساسية في الجهات الحيوية؟",
+    "language": "arabic",
+    "is_answerable": true,
+    "expected_sources": [{"filename": "AR_Report_04_Cybersecurity_Policy.pdf", "page": 2}],
+    "ground_truth_answer": "تم تطبيق ضوابط الأمن السيبراني الأساسية بنسبة 96% في كافة الجهات الحيوية [AR_Report_04_Cybersecurity_Policy.pdf, Page 2].",
+    "key_entities": ["96%", "ضوابط الأمن السيبراني"]
+  },
+  {
+    "id": "AR-ANS-09",
+    "question": "إلى كم انخفضت مدة مكوث الحاويات في الموانئ البحرية؟",
+    "language": "arabic",
+    "is_answerable": true,
+    "expected_sources": [{"filename": "AR_Report_05_Logistics_and_Ports.pdf", "page": 1}],
+    "ground_truth_answer": "تم تقليص مدة مكوث الحاويات من 6 أيام إلى 2.5 يوم بفضل المنصات الرقمية [AR_Report_05_Logistics_and_Ports.pdf, Page 1].",
+    "key_entities": ["من 6 أيام إلى 2.5 يوم", "مكوث الحاويات"]
+  },
+  {
+    "id": "AR-ANS-10",
+    "question": "كم عدد المناطق اللوجستية التي تم افتتاحها وكم نسبة خفض تكاليف النقل الداخلي؟",
+    "language": "arabic",
+    "is_answerable": true,
+    "expected_sources": [{"filename": "AR_Report_05_Logistics_and_Ports.pdf", "page": 2}],
+    "ground_truth_answer": "تم افتتاح 4 مناطق لوجستية خاصة مما خفض تكاليف النقل الداخلي للبضائع بنسبة 18% [AR_Report_05_Logistics_and_Ports.pdf, Page 2].",
+    "key_entities": ["4 مناطق لوجستية", "18%", "النقل الداخلي"]
+  },
+  {
+    "id": "AR-ANS-11",
+    "question": "ما هي نسبة المستشفيات المربوطة بمنظومة الملف الصحي الرقمي الموحد؟",
+    "language": "arabic",
+    "is_answerable": true,
+    "expected_sources": [{"filename": "AR_Report_06_Healthcare_Sector.pdf", "page": 1}],
+    "ground_truth_answer": "تم ربط 70% من المستشفيات والمراكز الصحية بمنظومة الملف الصحي الرقمي الموحد [AR_Report_06_Healthcare_Sector.pdf, Page 1].",
+    "key_entities": ["70%", "الملف الصحي الرقمي الموحد"]
+  },
+  {
+    "id": "AR-ANS-12",
+    "question": "كم عدد الاستشارات الطبية الافتراضية التي تم إجراؤها وما نسبة رضا المستفيدين؟",
+    "language": "arabic",
+    "is_answerable": true,
+    "expected_sources": [{"filename": "AR_Report_06_Healthcare_Sector.pdf", "page": 2}],
+    "ground_truth_answer": "أجرت منصات الصحة الافتراضية أكثر من 3 ملايين استشارة طبية عن بُعد بنسبة رضا بلغت 91% [AR_Report_06_Healthcare_Sector.pdf, Page 2].",
+    "key_entities": ["3 ملايين استشارة", "91%", "الطب الاتصالي"]
+  },
+  {
+    "id": "AR-ANS-13",
+    "question": "كم عدد المستشعرات الذكية المنشورة لإدارة المرور وما نسبة انخفاض الاختناقات المرورية؟",
+    "language": "arabic",
+    "is_answerable": true,
+    "expected_sources": [{"filename": "AR_Report_07_Smart_Cities_Infrastructure.pdf", "page": 1}],
+    "ground_truth_answer": "تم نشر 1200 مستشعر ذكي وكاميرا تحليلية مما خفض الاختناقات المرورية بنسبة 22% [AR_Report_07_Smart_Cities_Infrastructure.pdf, Page 1].",
+    "key_entities": ["1200 مستشعر", "22%", "الاختناقات المرورية"]
+  },
+  {
+    "id": "AR-ANS-14",
+    "question": "كم يبلغ الإنتاج اليومي للمياه المحلاة وما نسبة المحطات التي تعمل بالتناضح العكسي؟",
+    "language": "arabic",
+    "is_answerable": true,
+    "expected_sources": [{"filename": "AR_Report_08_Water_Security_Strategy.pdf", "page": 1}],
+    "ground_truth_answer": "بلغ الإنتاج اليومي للمياه المحلاة 6.2 مليون متر مكعب مع تحويل 60% من المحطات إلى تقنية التناضح العكسي [AR_Report_08_Water_Security_Strategy.pdf, Page 1].",
+    "key_entities": ["6.2 مليون متر مكعب", "60%", "التناضح العكسي"]
+  },
+  {
+    "id": "AR-ANS-15",
+    "question": "كم بلغ حجم التمويل الموجه للمنشآت الصغيرة والمتوسطة؟",
+    "language": "arabic",
+    "is_answerable": true,
+    "expected_sources": [{"filename": "AR_Report_09_SME_Entrepreneurship.pdf", "page": 1}],
+    "ground_truth_answer": "نما حجم التمويل الموجه للمنشآت الصغيرة والمتوسطة بنسبة 24% ليصل إلى 45 مليار ريال [AR_Report_09_SME_Entrepreneurship.pdf, Page 1].",
+    "key_entities": ["45 مليار ريال", "24%", "المنشآت الصغيرة والمتوسطة"]
+  },
+  {
+    "id": "AR-ANS-16",
+    "question": "كم عدد المستخدمين النشطين يومياً في المنصة الوطنية الموحدة للتعليم؟",
+    "language": "arabic",
+    "is_answerable": true,
+    "expected_sources": [{"filename": "AR_Report_10_Education_and_EdTech.pdf", "page": 1}],
+    "ground_truth_answer": "سجلت المنصة الوطنية الموحدة للتعليم أكثر من 6 ملايين مستخدم نشط يومياً مع إتاحة 45 ألف محتوى تفاعلي [AR_Report_10_Education_and_EdTech.pdf, Page 1].",
+    "key_entities": ["6 ملايين مستخدم نشط", "45 ألف محتوى"]
+  },
+  {
+    "id": "EN-UNANS-01",
+    "question": "What is the planned timeline for deploying quantum computing infrastructure in the European data center?",
+    "language": "english",
+    "is_answerable": false,
+    "expected_sources": [],
+    "ground_truth_answer": "I apologize, but the provided documents do not contain sufficient information to answer this question.",
+    "key_entities": ["quantum computing", "European data center"]
+  },
+  {
+    "id": "EN-UNANS-02",
+    "question": "What was the enterprise's total revenue generated from consumer crypto trading services in Q3 2024?",
+    "language": "english",
+    "is_answerable": false,
+    "expected_sources": [],
+    "ground_truth_answer": "I apologize, but the provided documents do not contain sufficient information to answer this question.",
+    "key_entities": ["consumer crypto trading", "Q3 2024"]
+  },
+  {
+    "id": "EN-UNANS-03",
+    "question": "What are the specific penalty fees paid for offshore deep-sea oil drilling environmental violations?",
+    "language": "english",
+    "is_answerable": false,
+    "expected_sources": [],
+    "ground_truth_answer": "I apologize, but the provided documents do not contain sufficient information to answer this question.",
+    "key_entities": ["penalty fees", "offshore deep-sea oil drilling"]
+  },
+  {
+    "id": "EN-UNANS-04",
+    "question": "Which aerospace manufacturer supplies titanium components for commercial supersonic aircraft prototypes?",
+    "language": "english",
+    "is_answerable": false,
+    "expected_sources": [],
+    "ground_truth_answer": "I apologize, but the provided documents do not contain sufficient information to answer this question.",
+    "key_entities": ["aerospace manufacturer", "supersonic aircraft"]
+  },
+  {
+    "id": "AR-UNANS-01",
+    "question": "ما هي الميزانية المخصصة لبناء أول محطة فضائية وطنية في مدار كوكب المريخ؟",
+    "language": "arabic",
+    "is_answerable": false,
+    "expected_sources": [],
+    "ground_truth_answer": "عذراً، الوثائق المرفقة لا تحتوي على معلومات كافية للإجابة على هذا السؤال.",
+    "key_entities": ["محطة فضائية", "كوكب المريخ"]
+  },
+  {
+    "id": "AR-UNANS-02",
+    "question": "كم عدد الغواصات النووية التي تم شراؤها لحماية الموانئ التجارية في عام 2024؟",
+    "language": "arabic",
+    "is_answerable": false,
+    "expected_sources": [],
+    "ground_truth_answer": "عذراً، الوثائق المرفقة لا تحتوي على معلومات كافية للإجابة على هذا السؤال.",
+    "key_entities": ["الغواصات النووية", "2024"]
+  },
+  {
+    "id": "AR-UNANS-03",
+    "question": "ما هي الشروط واللوائح الخاصة باستخراج خام اليورانيوم من مناجم القطب الجنوبي؟",
+    "language": "arabic",
+    "is_answerable": false,
+    "expected_sources": [],
+    "ground_truth_answer": "عذراً، الوثائق المرفقة لا تحتوي على معلومات كافية للإجابة على هذا السؤال.",
+    "key_entities": ["خام اليورانيوم", "مناجم القطب الجنوبي"]
+  },
+  {
+    "id": "AR-UNANS-04",
+    "question": "ما هي أسعار تذاكر رحلات التاكسي الطائر بدون طيار بين الرياض وباريس المعلنة في التقرير؟",
+    "language": "arabic",
+    "is_answerable": false,
+    "expected_sources": [],
+    "ground_truth_answer": "عذراً، الوثائق المرفقة لا تحتوي على معلومات كافية للإجابة على هذا السؤال.",
+    "key_entities": ["التاكسي الطائر", "الرياض وباريس"]
+  }
+]
