@@ -33,6 +33,7 @@ class Settings(BaseSettings):
     QDRANT_URL: Optional[str] = Field(default=None, description="Direct Qdrant URL if cloud or remote")
     QDRANT_API_KEY: Optional[str] = Field(default=None, description="Qdrant API Key if authenticated")
     QDRANT_COLLECTION: str = Field(default="bilingual_rag_docs", description="Qdrant collection name")
+    QDRANT_TIMEOUT: float = Field(default=60.0, description="Qdrant HTTP request timeout in seconds")
 
     # Embedding Model (Baseline Dense)
     # Default: BAAI/bge-m3 (SOTA multilingual, handles Arabic + English natively, 1024-dim)
@@ -60,10 +61,10 @@ class Settings(BaseSettings):
         description="LLM provider: groq (free fast), gemini (free tier), ollama (local), mock (testing)"
     )
     GROQ_API_KEY: Optional[str] = Field(default=None, description="Groq API key")
-    GROQ_MODEL: str = Field(default="llama-3.3-70b-versatile", description="Groq model name")
+    GROQ_MODEL: str = Field(default="llama-3.1-8b-instant", description="Groq model name")
 
     GEMINI_API_KEY: Optional[str] = Field(default=None, description="Google Gemini API key")
-    GEMINI_MODEL: str = Field(default="gemini-2.5-flash", description="Gemini model name")
+    GEMINI_MODEL: str = Field(default="gemini-1.5-flash", description="Gemini model name")
 
     OLLAMA_BASE_URL: str = Field(default="http://localhost:11434", description="Ollama API base URL")
     OLLAMA_MODEL: str = Field(default="llama3.2", description="Local Ollama model name")

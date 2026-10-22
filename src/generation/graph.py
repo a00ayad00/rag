@@ -114,9 +114,17 @@ def generate_step(state: RAGState, llm) -> Dict[str, Any]:
         response = llm.invoke(messages)
         answer_text = response.content if hasattr(response, "content") else str(response)
     except Exception as e:
-        logger.error(f"LLM generation failed: {e}")
-        lang = state.get("language", "english")
-        answer_text = REFUSAL_ARABIC if lang == "arabic" else REFUSAL_ENGLISH
+        logger.warning(f"Primary LLM generation failed ({e}). Attempting fallback to Gemini...")
+        try:
+            from src.generation.llm import get_llm
+            fallback_llm = get_llm(provider="gemini")
+            response = fallback_llm.invoke(messages)
+            answer_text = response.content if hasattr(response, "content") else str(response)
+            logger.info("Successfully recovered generation using Gemini fallback.")
+        except Exception as fb_err:
+            logger.error(f"Fallback generation also failed ({fb_err}). Defaulting to refusal.")
+            lang = state.get("language", "english")
+            answer_text = REFUSAL_ARABIC if lang == "arabic" else REFUSAL_ENGLISH
 
     return {"answer": answer_text}
 
